@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-alpine
 
-ENV GCLOUD_VERSION=156.0.0
+ENV GCLOUD_VERSION=158.0.0
 
 RUN apk add --no-cache curl python su-exec tini \
   &&curl -SsL https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-$GCLOUD_VERSION-linux-x86_64.tar.gz -o - | tar -zxf - \
